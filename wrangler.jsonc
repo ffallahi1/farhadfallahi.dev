@@ -1,0 +1,12 @@
+{
+  // Worker names can't contain dots, so hyphens it is.
+  "name": "farhadfallahi-dev",
+  "compatibility_date": "2026-09-13",
+  "build": {
+    "command": "hugo --gc --minify"
+  },
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
