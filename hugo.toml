@@ -1,0 +1,80 @@
+baseURL = "https://farhadfallahi.dev/"
+languageCode = "en-us"
+title = "Farhad Fallahi"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+buildDrafts = false
+buildFuture = false
+
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  description = "Cybersecurity undergraduate writing about networking, Linux, Python and defensive security."
+  author = "Farhad Fallahi"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+
+[params.homeInfoParams]
+  Title = "Farhad Fallahi"
+  Content = "Cybersecurity undergraduate. I work with Linux, networks and Python, and I write up what I break and what I fix."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ffallahi1"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:contact@farhadfallahi.dev"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "/posts/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "resume"
+  name = "Resume"
+  url = "/resume/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 50
+
+[markup.highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
