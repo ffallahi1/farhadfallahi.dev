@@ -1,9 +1,8 @@
 {
-  // Worker names can't contain dots, so hyphens it is.
   "name": "farhadfallahi-dev",
   "compatibility_date": "2026-09-13",
   "build": {
-    "command": "hugo --gc --minify"
+    "command": "hugo --gc --minify && python3 tools/csp_hashes.py"
   },
   "assets": {
     "directory": "./public",
